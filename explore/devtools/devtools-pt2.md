@@ -1,0 +1,2 @@
+1. The bug was that the numbers are read directly from the HTML elements as strings, so when they are added in calculateSum, JavaScript adds two strings together, which performs string concatenation instead of arithmeitc addition.
+2. To avoid this issue, we can convert the strings to numbers by use of the `Number()` function; hence, I'd change line 11 to `result = Number(num1) + Number(num2);`
